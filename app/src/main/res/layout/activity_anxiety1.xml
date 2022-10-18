@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:background="#f5e1e1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do's and Don't"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="1. Avoid caffeine
+        \n2. Write it out
+        \n3. Use fragrance
+        \n4. Talk to someone who gets it
+        \n5. Find a mantra
+        \n6. Walk it off
+        \n7. Drink water
+        \n8. Have some alone time
+        \n9. Turn off your phone
+        \n10. Have a bath
+        \n11. Eat something
+        \n12. Meditate"
+        android:layout_height="wrap_content"
+        android:textSize="18sp">
+
+    </TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Home"
+        android:id="@+id/home"/>
+
+
+</ScrollView>
