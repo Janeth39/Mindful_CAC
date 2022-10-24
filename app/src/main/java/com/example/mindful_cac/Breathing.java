@@ -3,9 +3,12 @@ package com.example.mindful_cac;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
 
 public class Breathing extends AppCompatActivity {
     private Button homeBtn;
@@ -31,6 +34,12 @@ public class Breathing extends AppCompatActivity {
                 openActivityN();
             }
         });
+
+//        public void ShowGif(View view) {
+//            ImageView imageView = findViewById(R.id.imageView);
+//            Glide.with(this).load(R.drawable.breathing).into(imageView);
+//        }
+        // 
     }
 
     public void openActivityH()
@@ -40,16 +49,17 @@ public class Breathing extends AppCompatActivity {
     }
     public void openActivityN()
     {
-        if(homeScrn.p > 9)
-        {
-
-            Intent intent = new Intent(this, Panic1.class);
-            startActivity(intent);
-        }
-        else if(homeScrn.p < 9)
+        Log.i(null, homeScrn.p + " ");
+        if(homeScrn.p == 10)
         {
 
             Intent intent = new Intent(this, Anxiety1.class);
+            startActivity(intent);
+        }
+        else if(homeScrn.p == 0)
+        {
+
+            Intent intent = new Intent(this, Panic1.class);
             startActivity(intent);
         }
 

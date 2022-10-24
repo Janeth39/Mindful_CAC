@@ -21,8 +21,10 @@ public class homeScrn extends AppCompatActivity {
 
         anxietyBtn = (Button) findViewById(R.id.anxietyAttack);
         anxietyBtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                p = 10;
                 openActivityA();
             }
         });
